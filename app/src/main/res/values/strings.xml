@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FormularioTextInputLayout</string>
+    <string name="act2_name">Actividad de Contacto</string>
+    <string name="act2_nombre_texto">Nombre</string>
+    <string name="act2_correo_texto">Correo electrónico</string>
+    <string name="act2_asunto_texto">Asunto</string>
+    <string name="act2_mensaje_texto">Mensaje</string>
+    <string name="act2_boton_texto">Enviar Mensaje</string>
+    <string name="act2_cadena_error">Faltan por introducir los siguientes campos obligatorios:\n\n</string>
+    <string name="act2_dialogo_tit">Contacto</string>
+    <string name="btn_positivo_texto">Aceptar</string>
+    <string name="btn_negativo_texto">Cancelar</string>
+    <string name="act2_envform_texto">Mensaje enviado correctamente</string>
+    <string name="error_correo">Correo electrónico inválido</string>
+    <string name="error_nombre">Nombre obligatorio</string>
+    <string name="error_asunto">Asunto obligatorio</string>
+    <string name="error_mensaje">Mensaje obligatorio</string>
+</resources>

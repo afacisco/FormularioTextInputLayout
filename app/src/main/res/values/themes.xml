@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FormularioTextInputLayout" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.FormularioTextInputLayout" parent="Base.Theme.FormularioTextInputLayout" />
+
+    <style name="PresentacionText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/azul_bold</item>
+        <item name="android:textSize">@dimen/text_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BotonGenerico" parent="ThemeOverlay.AppCompat">
+        <item name="backgroundTint">@color/azul_bold</item>
+        <item name="android:textSize">@dimen/act_text_form</item>
+        <item name="android:padding">@dimen/fab_margin</item>
+    </style>
+
+</resources>

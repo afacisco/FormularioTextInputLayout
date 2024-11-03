@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/act1_margin_item"
+        android:paddingTop="@dimen/window_top_padding"
+        android:paddingBottom="@dimen/window_padding"
+        android:paddingLeft="@dimen/window_padding"
+        android:paddingRight="@dimen/window_padding">
+
+        <TextView
+            android:id="@+id/textViewContacto"
+            style="@style/PresentacionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/act2_name"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/baseline_sentiment_satisfied_24"
+            android:paddingLeft="@dimen/window_padding"
+            android:paddingRight="@dimen/window_padding"
+            app:boxStrokeColor="@color/azul_bold"
+            android:layout_marginTop="@dimen/act1_margin_item"
+            android:layout_below="@+id/textViewContacto">
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/act2_nombre_texto"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="@dimen/act_text_form"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutNombre"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/baseline_mark_as_unread_24"
+            android:paddingLeft="@dimen/window_padding"
+            android:paddingRight="@dimen/window_padding"
+            app:boxStrokeColor="@color/azul_bold">
+
+            <EditText
+                android:id="@+id/editTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/act2_correo_texto"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="@dimen/act_text_form"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAsunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutCorreo"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/baseline_merge_24"
+            android:paddingLeft="@dimen/window_padding"
+            android:paddingRight="@dimen/window_padding"
+            app:boxStrokeColor="@color/azul_bold">
+
+            <EditText
+                android:id="@+id/editTextAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/act2_asunto_texto"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="@dimen/act_text_form"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutAsunto"
+            app:counterEnabled="true"
+            app:counterMaxLength="600"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/baseline_message_24"
+            android:paddingLeft="@dimen/window_padding"
+            android:paddingRight="@dimen/window_padding"
+            app:boxStrokeColor="@color/azul_bold">
+
+            <EditText
+                android:id="@+id/editTextMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/act2_mensaje_texto"
+                android:inputType="text|textMultiLine"
+                android:textSize="@dimen/act_text_form"
+                android:singleLine="false"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonEnvio"
+            style="@style/BotonGenerico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/act1_margin_item"
+            android:text="@string/act2_boton_texto"
+            android:layout_below="@+id/textInputLayoutMensaje"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</ScrollView>
